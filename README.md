@@ -1,46 +1,66 @@
-# Getting Started with Create React App
+<p align="center">
+  <img alt="Letmeask" src=".github/logo.svg">
+</p>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<p align="center">
+  <img  src="https://img.shields.io/static/v1?label=license&message=MIT&color=8257E5&labelColor=000000" alt="License">   
+</p>
 
-## Available Scripts
+<h1 align="center">
+  <img alt="Project cover" src=".github/cover.png">
+</h1>
 
-In the project directory, you can run:
+## Projeto
 
-### `yarn start`
+Criador de salas Q&A de maneira bem simplificada. Ótimo para usar em lives em que o host deseja responder as dúvidas do seu público.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Tecnologias
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Esse projeto teve como principais tecnologias:
 
-### `yarn test`
+- [TypeScript](https://www.typescriptlang.org/)
+- [React](https://reactjs.org)
+- [Firebase](https://firebase.google.com/)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Mas também utiliza:
+- [React Hot Toasts](https://react-hot-toast.com/)
+- [React Device Detect](https://github.com/duskload/react-device-detect)
+- [Classnames](https://github.com/JedWatson/classnames)
 
-### `yarn build`
+## Como executar
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Antes de qualquer coisa crie uma conta no [Firebase](https://firebase.google.com/) e tenha certeza de configurar os serviços de autenticação via Google e Realtime Database.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Clone o repositório e acesse a pasta:
 
-### `yarn eject`
+```bash
+$ git clone https://github.com/iranadryan/letmeask-nlw
+$ cd letmeask-nlw
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Crie um documento .env com as seguintes chaves encontradas no firebase:
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```dosini
+REACT_APP_API_KEY=
+REACT_APP_AUTH_DOMAIN=
+REACT_APP_DATABASE_URL=
+REACT_APP_PROJECT_ID=
+REACT_APP_STORAGE_BUCKET=
+REACT_APP_MESSAGING_SENDER_ID=
+REACT_APP_APP_ID=
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+Para iniciar a aplicação basta:
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+```bash
+# Instalar as dependências
+$ yarn || npm
 
-## Learn More
+# Iniciar o projeto
+$ yarn start || npm run start
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## License
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE.md) para mais detalhes.
